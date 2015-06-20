@@ -1,0 +1,273 @@
+body {
+  background-color: #DDD;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+}
+
+a img {
+  border: none;
+}
+
+a {
+  color: #0000FF;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+#container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+#flash_error, #flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+
+.error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+.error_messages p {
+  margin: 8px 10px;
+}
+
+.error_messages ul {
+  margin: 0;
+}
+.white {
+	color:white;
+}
+table.index 
+    {padding:10px;}
+table.index tr td 
+{padding-right:20px;}
+table#show tr td 
+{padding-right:20px;
+	padding-top:5px;}
+table#show tr td h3 
+	{color:red;}
+table#show 
+	{border-style:solid;
+	background-color:#EEE;
+	padding:10px;}
+	div#query
+	{border-style:solid;
+	background-color:#EEE;
+	padding:10}
+.nombre {color:red;}
+#gasto {color:red;
+         text-align: right;
+		}
+#ingreso {color:blue;
+ text-align: right;
+}
+.nuevo_item {float: right; margin-right:50px;}
+.pagination {
+  background: white;
+  cursor: default;
+  height: 22px;
+  a, span, em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px;
+  }
+  .disabled {
+    color: #999999;
+    border: 1px solid #dddddd;
+  }
+  .current {
+    font-style: normal;
+    font-weight: bold;
+    background: #2e6ab1;
+    color: white;
+    border: 1px solid #2e6ab1;
+  }
+  a {
+    text-decoration: none;
+    color: #105cb6;
+    border: 1px solid #9aafe5;
+    &:hover, &:focus {
+      color: #000033;
+      border-color: #000033;
+    }
+  }
+  .page_info {
+    background: #2e6ab1;
+    color: white;
+    padding: 0.4em 0.6em;
+    width: 22em;
+    margin-bottom: 0.3em;
+    text-align: center;
+    b {
+      color: #000033;
+      background: #2e6ab1 + 60;
+      padding: 0.1em 0.25em;
+    }
+  }
+}
+span.ingreso {
+  color: blue
+}
+span.gasto {
+  color: red
+}
+f.tipo.ingreso label {
+  color: black
+}
+
+f.tipo.gasto label {
+  color: red
+}
+table.indice tr th {
+  text-align:left;
+  padding-right:15px;
+}
+table.indice tr td {
+  padding-right:15px;
+}
+.num_align {
+  text-align: right;
+}
+tr.even {
+  background-color: #fff;
+}
+tr.odd {
+  background-color: #ddd;
+}
+img.detalle {
+  float:right;
+}
+
+div#new_apunte {
+  background-color: #dde;
+  border: solid;
+  padding: 10px;
+  width:40%;
+
+}
+div#new_apunte p {
+  font-size: 150%;
+  font-weight :bold;
+  margin:0;
+  padding:0;
+}
+div#new_apunte button {
+  font-size: 100%;
+  margin-left:60%;
+  margin-top:0;
+}
+div#ver_apuntes {
+  background-color: #edd;
+  border: solid;
+  padding: 10px;
+  width:40%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+
+}
+div#ver_apuntes div {
+  float:left;
+}
+div#ver_apuntes p {
+  font-size: 150%;
+  font-weight :bold;
+  margin:0;
+  padding:0;
+}
+div#ver_apuntes button {
+  font-size: 120%;
+  margin-left:60%;
+  margin-top:0;
+}
+label[for=cuentum_id_1] {
+  font-size: 200%;
+
+}
+label[for=cuentum_id_2] {
+  font-size: 200%;
+}
+label[for=cuentum_id_3] {
+  font-size: 200%;
+}
+div#new.button {
+  float:left;
+}
+div#show.button {
+  float:left;
+}
+  
+
+img.detalle {
+  float:right;
+}
+div#ver_mes {
+  float:right;
+  font-size: 150%;
+  background-color: #ded;
+  border: solid;
+  padding: 10px;
+  width:40%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+
+}
+div#ver_mes p {
+  font-weight :bold;
+  margin-bottom: 10px;
+  padding:0;
+}
+div#ver_mes button {
+  font-size: 120%;
+  margin-left:10%;
+  margin-top:0;
+}
+div#ver_mes select {
+  font-size: 120%;
+  margin-left:10%;
+  margin-top:0;
+}
+
+.green {
+    color:green;
+    font-weight: bold;
+}

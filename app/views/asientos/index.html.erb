@@ -1,0 +1,101 @@
+
+<h1>Lista de apuntes contables</h1>
+
+<h2>Cuenta <%= Cuentum.find(@usercuenta).nombre %></h2>
+<% estado = estado_caja(@asientos2)%>
+
+<h2> Estado de  <%= Cuentum.find(@usercuenta).nombre %>: 
+  <% if estado[0] < 0 %>
+    <span class="egreso">
+      <%= estado[0].round(2) %>
+    </span>
+  <% elsif estado[0] > 0 %>
+    <span class="ingreso">
+      <%= estado[0].round(2) %>
+    </span>
+  <% else %>
+  <% end %> 
+  <%= Cuentum.find(@usercuenta).moneda %>
+</h2>
+
+<span class="nuevo_item">
+  <% if can? :create, Asiento %>
+    <%= form_tag new_asiento_path, :method => 'get' do %>
+	  <%= hidden_field_tag :cuentum_id, @usercuenta %>
+	  <%= button_tag 'Apunte nuevo' %>
+    <% end %>
+  <% end %>
+</span>
+
+<%= will_paginate_with_i18n @asientos %><br />
+
+<table class="indice">
+
+  <tr>
+   <th>Fecha</th>
+   <th>Tipo</th>
+   <th>Categoria</th>
+   <th>Descripcion</th>
+   <th>Monto</th>
+   <th>Evolución caja</th>
+   <th></th>
+   <th></th>
+   <th></th>
+  </tr>
+
+  <% @asientos.each do |asiento| %>  
+    <% if asiento.tipo_id == 2 then %>
+      <tr class= "egreso <%= cycle('odd', 'even') -%>">
+    <% elsif asiento.tipo_id == 1 %>
+	  <tr class="ingreso <%= cycle('odd', 'even') -%>">
+    <% else %>
+	  <tr>
+    <% end %>
+  
+      <td><%= asiento.fecha %></td>
+      <td><%= asiento.tipo.descripcion %></td>
+      <td><%= asiento.categorium.descripcion %></td>
+      <td><%= asiento.descripcion %></td>
+      <td class="num_align"> <%= asiento.monto.round(2) %></td>
+      <% if estado[1][asiento.id] >0  %>
+        <td class="ingreso">
+      <% elsif estado[1][asiento.id] <0 %>
+	    <td class="egreso">
+      <% else %>
+	    <td class="num_align">
+      <% end %>
+	  <%= estado[1][asiento.id].round(2) %>
+	  </td>
+      <td><%= link_to 'Mostrar', asiento %></td>
+      <% if can? :update, asiento %>
+        <td>
+          <%= form_tag edit_asiento_path(asiento) , :method => "get" do  %>
+			<%= hidden_field_tag :cuentum_id, asiento.cuentum_id %>
+			<%= button_tag 'Modificar apunte' %>
+		  <% end %>
+		</td>
+      <% end %>
+      <%  if can? :destroy, asiento %>
+        <td><%= link_to 'Eliminar', asiento, :confirm => '¿Está usted seguro?', :method => :delete %></td>
+      <% end %>
+    </tr> 
+  <% end %>
+
+</table>
+
+<br />
+<span class="nuevo_item">
+  <% if can? :create, Asiento %>
+    <%= form_tag new_asiento_path, :method => 'get' do %>
+	  <%= hidden_field_tag :cuentum_id, @usercuenta %>
+	  <%= button_tag 'Apunte nuevo' %>
+    <% end %>	
+  <% end %>
+</span>
+<%= link_to "Cambiar de cuenta", cuenta_path %>
+<br />
+<%= will_paginate_with_i18n @asientos %>
+<br />
+<%= link_to "Exportar a csv", request.parameters.merge({:format => :csv}) %>
+
+

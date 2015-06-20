@@ -1,0 +1,402 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1389620737.9549851:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%54e144dcaa34ba9884964cbacf0a5ef8I"logical_path;
+FI"application_nifty.css;
+TI"pathname;
+FI"<$root/app/assets/stylesheets/application_nifty.css.scss;
+TI"content_type;
+FI"text/css;
+FI"
+mtime;
+FI"2014-01-12T20:53:43+01:00;
+FI"	body;
+FI"›#/* line 1, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+body {
+  background-color: #DDD;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+}
+
+/* line 7, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+a img {
+  border: none;
+}
+
+/* line 11, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+a {
+  color: #0000FF;
+}
+
+/* line 15, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 21, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+#container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+/* line 30, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+/* line 35, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+/* line 40, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+#flash_error, #flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+/* line 45, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.fieldWithErrors {
+  display: inline;
+}
+
+/* line 49, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+
+/* line 59, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+/* line 69, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.error_messages p {
+  margin: 8px 10px;
+}
+
+/* line 73, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.error_messages ul {
+  margin: 0;
+}
+
+/* line 76, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.white {
+  color: white;
+}
+
+/* line 80, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+table.index {
+  padding: 10px;
+}
+
+/* line 82, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+table.index tr td {
+  padding-right: 20px;
+}
+
+/* line 84, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+table#show tr td {
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+/* line 87, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+table#show tr td h3 {
+  color: red;
+}
+
+/* line 89, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+table#show {
+  border-style: solid;
+  background-color: #EEE;
+  padding: 10px;
+}
+
+/* line 93, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+div#query {
+  border-style: solid;
+  background-color: #EEE;
+  padding: 10;
+}
+
+/* line 96, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.nombre {
+  color: red;
+}
+
+/* line 97, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+#gasto {
+  color: red;
+  text-align: right;
+}
+
+/* line 100, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+#ingreso {
+  color: blue;
+  text-align: right;
+}
+
+/* line 103, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.nuevo_item {
+  float: right;
+  margin-right: 50px;
+}
+
+/* line 104, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.pagination {
+  background: white;
+  cursor: default;
+  height: 22px;
+}
+/* line 108, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.pagination a, .pagination span, .pagination em {
+  padding: 0.2em 0.5em;
+  display: block;
+  float: left;
+  margin-right: 1px;
+}
+/* line 114, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.pagination .disabled {
+  color: #999999;
+  border: 1px solid #dddddd;
+}
+/* line 118, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background: #2e6ab1;
+  color: white;
+  border: 1px solid #2e6ab1;
+}
+/* line 125, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.pagination a {
+  text-decoration: none;
+  color: #105cb6;
+  border: 1px solid #9aafe5;
+}
+/* line 129, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.pagination a:hover, .pagination a:focus {
+  color: #000033;
+  border-color: #000033;
+}
+/* line 134, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.pagination .page_info {
+  background: #2e6ab1;
+  color: white;
+  padding: 0.4em 0.6em;
+  width: 22em;
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+/* line 141, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.pagination .page_info b {
+  color: #000033;
+  background: #6aa6ed;
+  padding: 0.1em 0.25em;
+}
+
+/* line 148, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+span.ingreso {
+  color: blue;
+}
+
+/* line 151, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+span.gasto {
+  color: red;
+}
+
+/* line 154, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+f.tipo.ingreso label {
+  color: black;
+}
+
+/* line 158, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+f.tipo.gasto label {
+  color: red;
+}
+
+/* line 161, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+table.indice tr th {
+  text-align: left;
+  padding-right: 15px;
+}
+
+/* line 165, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+table.indice tr td {
+  padding-right: 15px;
+}
+
+/* line 168, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.num_align {
+  text-align: right;
+}
+
+/* line 171, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+tr.even {
+  background-color: #fff;
+}
+
+/* line 174, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+tr.odd {
+  background-color: #ddd;
+}
+
+/* line 177, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+img.detalle {
+  float: right;
+}
+
+/* line 181, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+div#new_apunte {
+  background-color: #dde;
+  border: solid;
+  padding: 10px;
+  width: 40%;
+}
+
+/* line 188, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+div#new_apunte p {
+  font-size: 150%;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 194, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+div#new_apunte button {
+  font-size: 100%;
+  margin-left: 60%;
+  margin-top: 0;
+}
+
+/* line 199, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+div#ver_apuntes {
+  background-color: #edd;
+  border: solid;
+  padding: 10px;
+  width: 40%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+/* line 208, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+div#ver_apuntes div {
+  float: left;
+}
+
+/* line 211, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+div#ver_apuntes p {
+  font-size: 150%;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 217, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+div#ver_apuntes button {
+  font-size: 120%;
+  margin-left: 60%;
+  margin-top: 0;
+}
+
+/* line 222, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+label[for=cuentum_id_1] {
+  font-size: 200%;
+}
+
+/* line 226, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+label[for=cuentum_id_2] {
+  font-size: 200%;
+}
+
+/* line 229, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+label[for=cuentum_id_3] {
+  font-size: 200%;
+}
+
+/* line 232, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+div#new.button {
+  float: left;
+}
+
+/* line 235, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+div#show.button {
+  float: left;
+}
+
+/* line 240, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+img.detalle {
+  float: right;
+}
+
+/* line 243, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+div#ver_mes {
+  float: right;
+  font-size: 150%;
+  background-color: #ded;
+  border: solid;
+  padding: 10px;
+  width: 40%;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+/* line 254, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+div#ver_mes p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+/* line 259, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+div#ver_mes button {
+  font-size: 120%;
+  margin-left: 10%;
+  margin-top: 0;
+}
+
+/* line 264, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+div#ver_mes select {
+  font-size: 120%;
+  margin-left: 10%;
+  margin-top: 0;
+}
+
+/* line 270, /home/zubi/pelu2/app/assets/stylesheets/application_nifty.css.scss */
+.green {
+  color: green;
+  font-weight: bold;
+}
+;
+FI"asset_paths;
+F[I"<$root/app/assets/stylesheets/application_nifty.css.scss;
+TI"dependency_paths;
+F[{I"	path;
+FI"<$root/app/assets/stylesheets/application_nifty.css.scss;
+TI"
+mtime;
+FIu:	Time“€“n±Ö:@_zoneI"CET;
+T:offsetiI"hexdigest;
+F"%a0f0897c2359c668dbc1be9eb2bb6919I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

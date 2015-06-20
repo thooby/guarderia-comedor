@@ -1,0 +1,33 @@
+<div >
+  <h2>
+    <thead>
+      <%= @stats[0]%>
+    </thead>
+  </h2>
+  <table id="show">
+    <tr>
+      <td>
+      <% notini = false %>
+      <% @stats[1..-1].each do |z| %>
+        <% if z[0].to_s.index('<h2>') then %>
+          <%  if notini then %>
+            </table></td><td>
+            <table><tr>
+          <% else %>
+            <% notini=true %>
+            <table><tr>
+          <% end %>
+        <% else %>
+          <tr>
+        <% end %>
+        <% z.each do |w| %>
+          <td><%=raw w %></td>
+        <% end %>
+        </tr>
+      <% end %>
+    </table>
+    </td>
+    </tr> 
+  </table>
+</div>
+

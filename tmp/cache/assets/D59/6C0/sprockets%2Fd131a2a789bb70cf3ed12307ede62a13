@@ -1,0 +1,21 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1434586400.1641002:@value{I"
+class:ETI"StaticAsset;
+FI"id;
+TI"%be047e32d31246a78f3e1cba3ea003e9;
+FI"logical_path;
+TI"carme.gif;
+TI"pathname;
+TI"&$root/app/assets/images/carme.gif;
+FI"content_type;
+TI"image/gif;
+TI"
+mtime;
+TI"2014-01-08T11:06:17-06:00;
+TI"length;
+TI"
+26381;
+FI"digest;
+TI"%a1ad21e6d10f80ec012cca3f797a612f;
+FI"_version;
+TI"%0868aba5d4b750d3a9421721ea3d9b9c;
+F

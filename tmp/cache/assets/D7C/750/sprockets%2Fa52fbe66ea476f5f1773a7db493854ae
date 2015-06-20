@@ -1,0 +1,125 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1389620737.9713852:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%5f02ec04f488686a1ba606bb296a5d2dI"logical_path;
+FI"asientos.css;
+TI"pathname;
+FI"3$root/app/assets/stylesheets/asientos.css.scss;
+TI"content_type;
+FI"text/css;
+FI"
+mtime;
+FI"2014-01-08T18:06:17+01:00;
+FI"	body;
+FI"√/* line 4, /home/zubi/pelu2/app/assets/stylesheets/asientos.css.scss */
+.ingreso {
+  color: blue;
+  text-align: right;
+}
+
+/* line 10, /home/zubi/pelu2/app/assets/stylesheets/asientos.css.scss */
+.egreso {
+  color: red;
+  text-align: right;
+}
+
+/* line 15, /home/zubi/pelu2/app/assets/stylesheets/asientos.css.scss */
+body {
+  background-color: #4B7399;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+}
+
+/* line 21, /home/zubi/pelu2/app/assets/stylesheets/asientos.css.scss */
+a img {
+  border: none;
+}
+
+/* line 25, /home/zubi/pelu2/app/assets/stylesheets/asientos.css.scss */
+a {
+  color: #0000FF;
+}
+
+/* line 29, /home/zubi/pelu2/app/assets/stylesheets/asientos.css.scss */
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 35, /home/zubi/pelu2/app/assets/stylesheets/asientos.css.scss */
+#container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+/* line 44, /home/zubi/pelu2/app/assets/stylesheets/asientos.css.scss */
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+/* line 49, /home/zubi/pelu2/app/assets/stylesheets/asientos.css.scss */
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+/* line 54, /home/zubi/pelu2/app/assets/stylesheets/asientos.css.scss */
+#flash_error, #flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+/* line 59, /home/zubi/pelu2/app/assets/stylesheets/asientos.css.scss */
+.fieldWithErrors {
+  display: inline;
+}
+
+/* line 63, /home/zubi/pelu2/app/assets/stylesheets/asientos.css.scss */
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+
+/* line 73, /home/zubi/pelu2/app/assets/stylesheets/asientos.css.scss */
+.error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+/* line 83, /home/zubi/pelu2/app/assets/stylesheets/asientos.css.scss */
+.error_messages p {
+  margin: 8px 10px;
+}
+
+/* line 87, /home/zubi/pelu2/app/assets/stylesheets/asientos.css.scss */
+.error_messages ul {
+  margin: 0;
+}
+;
+FI"asset_paths;
+F[I"3$root/app/assets/stylesheets/asientos.css.scss;
+TI"dependency_paths;
+F[{I"	path;
+FI"3$root/app/assets/stylesheets/asientos.css.scss;
+TI"
+mtime;
+FIu:	TimeÅÄ≥™:@_zoneI"CET;
+T:offsetiI"hexdigest;
+F"%d3d1094231c943cd563bd1a4bbeca324I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c
