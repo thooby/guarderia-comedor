@@ -32,7 +32,7 @@ class Asiento < ActiveRecord::Base
   def self.informe_mensual
   end
   def self.informe_mes(mes,anno)
-    gap = DateTime.new(anno,mes,1)
+    gap = Date.new(anno,mes,1)
     gap2 = Date.today
     gap_ini = gap.at_beginning_of_month
     gap_end = gap.at_end_of_month  
@@ -42,20 +42,30 @@ class Asiento < ActiveRecord::Base
     informe(gap_ini, gap_end)
   end
   def self.informe(gap_ini,gap_end)
+    orden_cates=[4,12,13,1,3,5,11,7,2,14,10,15,16,17,18,19,20,8,6]
     salida = ["Informe del mes de #{@mes_nom[gap_ini.month]} hasta el dia #{gap_end.day}"]
-    cates = Categorium.all.map{|x| [x.id,x.descripcion]}
+    cates2 = Categorium.all.map{|x| [x.id,x.descripcion]}
+    logger.debug "Cates_orig: #{cates2.inspect}"
+    cates = []
+    orden_cates.each do |h|
+      cates.push(cates2[h-1]) if cates2[h-1]
+    end
+    logger.info "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --------> "
+    logger.debug "hash: #{cates.inspect}"
     cuentas = Cuentum.all.map{|x| [x.id,x.nombre]}
     tipos = Tipo.all.map{|x| [x.id,x.descripcion]}
     n = 0
-
-    cuentas[0..-2].each do |cuenta|
+    cuentas=[[1,"Caja chica"]]
+    cuentas.each do |cuenta|
           @suma_total = 0
       salida  << ["<h2>Cuenta #{cuenta[1]}</h2>"]
-      tipos.each do |tipo|
+      tipos.each do |tipo|  
         suma = 0
         salida  << ["<h3>#{tipo[1]}</h3>"]
         cates.each do |cate|
           item = cate[1].capitalize
+          logger.debug "item: #{item}"
+          
           valor = self.sel_trozo(gap_ini,gap_end,cate[0],cuenta[0],tipo[0]).sum(:monto)
           if (valor != 0)
             suma += valor

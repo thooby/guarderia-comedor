@@ -33,6 +33,19 @@
   <b>Observaciones:</b>
   <%= @asiento.observaciones %>
 </p>
+<% if @asiento.observaciones =~ /\d/ then %>
+  <% n_fot=sprintf("%04i",@asiento.observaciones.tr("^0-9","")) %>
+  <% n_fot_long = sprintf("/home/zubi/guarderia-comedor/app/assets/images/image2/%s*",n_fot) %>
+  <% fot1 = Dir.glob(n_fot_long)[0] %> 
+  <% if fot1 then %>
+  <% fot =fot1.split("/")[-1] %>
+  <img src="/assets/image2/<%= fot %>" alt="factura" width="600" heigth="800">
+  <% else %>
+  Sin introducir el soporte documental
+  <% end %>
+<% else %>
+  Sin soporte documental 
+<% end %>
 <div id="show">
 <% if can? :update, Asiento %>
   <%= form_tag edit_asiento_path(@asiento) , :method => "get" do  %>

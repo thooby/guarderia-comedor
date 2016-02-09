@@ -2,6 +2,8 @@
 <%- headers = ["Id", "Fecha","Categoria","Tipo","Descripcion","Monto","Balance"] -%>
 <%= CSV.generate_line headers, options = {:col_sep => ";", :row_sep => "\t", :quote_char => "'"} %>
 <%- @asientos2.each do |n| -%>
-<%- row = [ n.id, n.fecha,n.tipo.descripcion,n.categorium.descripcion,n.descripcion,n.monto, estado[1][n.id]," "] -%>
+<% if n.observaciones=='' then n.observaciones=" " end %>
+<%- obs = n.observaciones.tr("^A-Za-z0-9 éóúíáÁÉÚÍÓñÑ/","") %>
+<%- row = [ n.id, n.fecha,n.tipo.descripcion,n.categorium.descripcion,n.descripcion,obs,n.monto, estado[1][n.id]," "] -%>
 <%= CSV.generate_line row, options = {:col_sep => ";", :row_sep => "\t", :quote_char => "'"}  %>
 <%- end -%>
