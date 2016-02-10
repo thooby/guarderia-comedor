@@ -1,4 +1,6 @@
-<div id="ver_apuntes">
+<% if can? :create, Asiento %>
+  <div id="ver_apuntes">
+
   <p>Ver apuntes de las cuentas</p>
   <%= form_tag asientos_path, :method => "get" do  %>
     <%= radio_button_tag(:cuentum_id, "1",:checked => true) %>
@@ -11,7 +13,8 @@
 		-->
     <%= button_tag 'Ver cuenta' %>
   <% end %>
-</div>
+  </div>
+<% end %>
 
 <div id="ver_mes">
     <p>Ver resumen mensual</p>
@@ -21,6 +24,7 @@
     <%= button_tag 'Ver ' %>
   <% end %>
 </div>
+
 <% if can? :create, Asiento %>
   <div id="new_apunte">
     <p>Añadir apuntes a las cuentas</p>
@@ -35,7 +39,5 @@
 			-->
       <p><%= button_tag 'Añadir apunte' %></p>
    <% end %>
-</div>
+  </div>
 <% end %>
-
-

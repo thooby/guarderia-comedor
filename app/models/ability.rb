@@ -5,6 +5,8 @@ class Ability
     # Define abilities for the passed in user here. For example:
     #
       user ||= User.new # guest user (not logged in)
+      alias_action :look_at_month, to: :read
+      
        if user.role == "admin"
          can :manage, :all
        elsif user.role == "operador"
